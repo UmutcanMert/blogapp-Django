@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title%}Blog Details{% endblock %}
+
+{% block content %}
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-3">
+            {% include 'partials/_categories.html' %}
+        </div>
+        <div class="col-9">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    
+                  <div class="col-md-12">
+                    <div class="card-body">
+                      <h1 class="card-title h3 mb-3">
+                          {{ blog.title|title }} 
+                      </h1>
+                      <img src="{{ blog.img.url}}" class="img-fluid" style="float:left; margin-right:20px; margin-bottom:20px;" alt="...">
+                      <p class="card-text"><a href="{{blog.link}}">{{blog.link_explain}}</a></p>
+                      <p class="card-text"><small class="text-muted">{{ blog.description|safe }}</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+   
+    </div>
+</div>
+{% endblock %}

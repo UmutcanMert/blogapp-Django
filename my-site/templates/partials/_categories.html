@@ -1,0 +1,13 @@
+<div class="list-group">
+    <a href="https://github.com/UmutcanMert" class="list-group-item list-group-item-action" aria-current="true">
+        Github Page
+    </a>
+    {% for category in categories %}
+        {% if category.slug == selected_category %}
+            <a href="{% url 'blogs_by_category' category.slug %}" class="list-group-item list-group-item-action active">{{ category.name|title }}</a>
+        {% else %}
+            <a href="{% url 'blogs_by_category' category.slug %}" class="list-group-item list-group-item-action">{{ category.name|title }}</a>    
+        {% endif %}
+        
+    {% endfor %}
+</div>
