@@ -3,5 +3,5 @@
 ##### Kodu çalıştırmak için;
 ###### 1-Klasörleri indirince tek bir klasörde toplayın
 ###### 2-my-site adlı klasore girin.
-###### 3- [python3 manage.py runserver] komutu ile kodu çalıştırın
+###### 3- "python3 manage.py runserver" komutu ile kodu çalıştırın
 ######
