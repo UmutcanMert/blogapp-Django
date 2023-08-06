@@ -4,4 +4,4 @@
 ###### 1-Klasörleri indirince tek bir klasörde toplayın
 ###### 2-my-site adlı klasore girin.
 ###### 3- `python3 manage.py runserver` komutu ile kodu çalıştırın
-######
+####### İmport edilmesi gerekenler requirements.txt dosyasında mevcuttur
